@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Demo</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .events-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-bottom: 50px;
+        }
+
+        .event-item {
+            width: 300px;
+            text-align: left;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #ff0000; /* Default Red */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid black;
+            width: 200px;
+            font-size: 16px;
+            background-color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Javascript Events</h1>
+
+    <div class="events-container">
+        <div class="event-item">
+            <h2>OnMouseover:</h2>
+            <p>mouse over to change button background color</p>
+            <button id="mouseover-btn"
+                    onmouseover="handleMouseOver(this)">
+                Mouse over
+            </button>
+        </div>
+
+        <div class="event-item">
+            <h2>OnMouseout:</h2>
+            <p>mouse out to change button background color</p>
+            <button id="mouseout-btn"
+                    onmouseout="handleMouseOut(this)">
+                Mouse Out
+            </button>
+        </div>
+
+        <div class="event-item">
+            <h2>Onclick:</h2>
+            <p>Click to change button background color</p>
+            <button id="click-btn"
+                    onclick="handleClick(this)">
+                onclick
+            </button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="events-container">
+        <div class="event-item">
+            <h2>Ondblclick:</h2>
+            <p>Double Click to change button background color</p>
+            <button id="dblclick-btn"
+                    ondblclick="handleDoubleClick(this)">
+                ondblclick
+            </button>
+        </div>
+
+        <div class="event-item">
+            <h2>onfocus:</h2>
+            <p>Click to change Input background color</p>
+            <input type="text" id="focus-input"
+                   onfocus="handleFocus(this)" placeholder="Click here">
+        </div>
+
+        <div class="event-item">
+            <h2>onblur:</h2>
+            <p>Change Lower case to upper case onblur Events</p>
+            <input type="text" id="blur-input"
+                   onblur="handleBlur(this)" placeholder="Type lowercase here">
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
