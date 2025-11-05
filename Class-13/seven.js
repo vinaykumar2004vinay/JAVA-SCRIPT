@@ -1,0 +1,5 @@
+let add = (a,b)=>{
+    return a+b
+}
+let n = add(10,20)
+console.log(n)
