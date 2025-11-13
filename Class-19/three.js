@@ -1,0 +1,6 @@
+setTimeout(() => {console.log("Request-1")},1000)
+setTimeout(() => {console.log("Request-2")},5000)
+setTimeout(() => {console.log("Request-3")},2000)
+setTimeout(() => {console.log("Request-4")},7000)
+setTimeout(() => {console.log("Request-5")},9000)
+setTimeout(() => {console.log("Request-6")},3000)
